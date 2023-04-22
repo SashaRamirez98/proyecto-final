@@ -1,0 +1,40 @@
+/* main de todas las secciones */
+.main {
+    min-height: 70vh;
+    background-image: url(../recursos/imagenes/fondo-2.jpg);
+    background-size: 100%;
+    padding: 10px;
+    .titulo-seccion {
+        font-family: $titulo;
+        text-align: center;
+        border: solid 2px white;
+    }
+    p {
+        margin: 2%;
+        text-align: center;
+        font-weight: bold;
+    }
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: $titulo;
+        margin: 2%;
+        color: black;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+    h3 {
+        color: black;
+        text-align: center;
+        border: solid 2px white;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,31 @@
+/* barra de navegación */
+.navbar {
+    background-color: #12370E !important;
+    .navbar-toggler-icon {
+        background-image: url(http://www.rocamorasabor.com/images/menu.png) !important;
+    }
+    .navbar-toggler {
+        border: var(--bs-border-width) solid #fff;
+    }
+    .navbar-brand{
+        img{
+            width: 150px;
+        }
+    }
+    .blanco a {
+        color: white;
+    }
+    .dropdown-item {
+        color: black !important;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #fff;
+    }
+    .nav-link {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

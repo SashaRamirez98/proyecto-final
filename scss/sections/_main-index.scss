@@ -1,0 +1,73 @@
+.main{
+    .carousel {
+        width: 70%;
+        margin: auto;
+        padding: 15px;
+    }
+    .titulo-index {
+        color: black;
+        text-align: center;
+        font-family: $titulo;
+        margin: 2%;
+    }
+    .section-index {
+        display: flex;
+        justify-content: center;
+        img {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+    }
+    /* grid index */
+    .grid-index {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "seccion-uno seccion-uno seccion-uno seccion-uno"
+            ". seccion-dos seccion-dos ."
+            "seccion-tres seccion-tres seccion-cuatro seccion-cuatro"
+            "seccion-cinco seccion-cinco seccion-seis seccion-seis";
+    }
+    .seccion-uno {
+        grid-area: seccion-uno;
+    }
+    .seccion-seis {
+        grid-area: seccion-seis;
+    }
+    .seccion-dos {
+        grid-area: seccion-dos;
+    }
+    .seccion-tres {
+        grid-area: seccion-tres;
+    }
+    .seccion-cuatro {
+        grid-area: seccion-cuatro;
+    }
+    .seccion-cinco {
+        grid-area: seccion-cinco;
+    }
+}
+
+
+
+/* Mobile First */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+/* Mobile Last */
+
+@media (max-width: 991px) {
+
+    .grid-index {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

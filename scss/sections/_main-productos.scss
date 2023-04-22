@@ -1,0 +1,24 @@
+/* seccion Todos los Productos */
+.main{
+    .article {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .card {
+        display: flex;
+    }
+    .boton-arriba {
+        display: flex;
+        margin: 2px;
+        font-family: "Raleway-Medium";
+        justify-content: center;
+    }
+    .boton-arriba{
+        a{
+            margin: 20px !important;
+        }
+    }
+}

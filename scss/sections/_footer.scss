@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #12370E;
+    color: white;
+    min-height: 10vh;
+    padding: 10px;
+    .redes {
+        display: flex;
+        align-items: center;
+        img {
+            display: flex;
+            width: 40px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    }
+    img {
+        width: 100px;
+        display: flex;
+        margin: auto;
+        border-radius: 15%;
+    }
+}
+
