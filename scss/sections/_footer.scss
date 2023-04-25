@@ -11,11 +11,18 @@
         justify-content: space-around;
         font-size: 20px;
         margin: 5px;
+        
         i {
             border: 2px white solid;
             color: white;
             padding: 5px;
             border-radius: 30%;
+            &:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            color: #c9ab63;
+            border: 2px #c9ab63 solid;
+        }
         }
     }
     &__logo {

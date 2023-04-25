@@ -28,14 +28,23 @@
     color: black; }
     .main h2:hover {
       transform: scale(1.1);
-      transition: 0.5s; }
+      transition: 0.5s;
+      background-color: #12370eaf; }
   .main h3 {
     color: black;
     text-align: center;
     border: solid 2px white; }
     .main h3:hover {
       transform: scale(1.1);
-      transition: 0.5s; }
+      transition: 0.5s;
+      background-color: #12370eaf; }
+
+/* Mobile First */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end; } }
 
 /* barra de navegación */
 .navbar {
@@ -96,13 +105,6 @@
   .main__seccion-5 {
     grid-area: seccion-cinco; }
 
-/* Mobile First */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    justify-content: flex-end; } }
-
 /* Mobile Last */
 @media (max-width: 991px) {
   .main__grid {
@@ -112,7 +114,7 @@
 .texto-somos {
   text-align: center; }
 
-.main .form-contacto {
+.main__form {
   width: 50%;
   margin: auto;
   font-weight: bold; }
@@ -124,6 +126,12 @@
 
 .main .negrita {
   font-weight: bold; }
+
+/* Mobile Last */
+@media (max-width: 730px) {
+  .main__form {
+    width: 70%;
+    margin: auto; } }
 
 /* seccion Todos los Productos */
 .main .article {
@@ -163,6 +171,11 @@
       color: white;
       padding: 5px;
       border-radius: 30%; }
+      .footer__redes i:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        color: #c9ab63;
+        border: 2px #c9ab63 solid; }
   .footer__logo {
     width: 100px;
     display: flex;

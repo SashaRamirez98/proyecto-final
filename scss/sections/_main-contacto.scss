@@ -1,5 +1,5 @@
 .main{
-    .form-contacto {
+    &__form {
         width: 50%;
         margin: auto;
         font-weight: bold;
@@ -11,5 +11,15 @@
     }
     .negrita {
         font-weight: bold;
+    }
+}
+
+/* Mobile Last */
+
+@media (max-width: 730px) {
+
+    .main__form {
+        width: 70%;
+        margin: auto;
     }
 }
