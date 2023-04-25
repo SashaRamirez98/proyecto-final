@@ -4,7 +4,7 @@
     background-image: url(../recursos/imagenes/fondo-2.jpg);
     background-size: 100%;
     padding: 10px;
-    .titulo-seccion {
+    &__titulo {
         font-family: $titulo;
         text-align: center;
         border: solid 2px white;

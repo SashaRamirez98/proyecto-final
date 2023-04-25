@@ -5,17 +5,20 @@
     color: white;
     min-height: 10vh;
     padding: 10px;
-    .redes {
+    &__redes {
         display: flex;
         align-items: center;
-        img {
-            display: flex;
-            width: 40px;
-            margin: 10px;
-            border-radius: 50%;
+        justify-content: space-around;
+        font-size: 20px;
+        margin: 5px;
+        i {
+            border: 2px white solid;
+            color: white;
+            padding: 5px;
+            border-radius: 30%;
         }
     }
-    img {
+    &__logo {
         width: 100px;
         display: flex;
         margin: auto;

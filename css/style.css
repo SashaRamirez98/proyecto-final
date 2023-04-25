@@ -12,7 +12,7 @@
   background-image: url(../recursos/imagenes/fondo-2.jpg);
   background-size: 100%;
   padding: 10px; }
-  .main .titulo-seccion {
+  .main__titulo {
     font-family: "Oswald", sans-serif;
     text-align: center;
     border: solid 2px white; }
@@ -65,35 +65,35 @@
     width: 70%;
     margin: auto;
     padding: 15px; }
-  .main .titulo-index {
+  .main__titulo-index {
     color: black;
     text-align: center;
     font-family: "Oswald", sans-serif;
     margin: 2%; }
-  .main .section-index {
+  .main__section {
     display: flex;
     justify-content: center; }
-    .main .section-index img {
+    .main__section img {
       display: flex;
       width: 80%;
       margin: auto; }
-  .main .grid-index {
+  .main__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "seccion-uno seccion-uno seccion-uno seccion-uno" ". seccion-dos seccion-dos ." "seccion-tres seccion-tres seccion-cuatro seccion-cuatro" "seccion-cinco seccion-cinco seccion-seis seccion-seis"; }
-  .main .seccion-uno {
+  .main__seccion-1 {
     grid-area: seccion-uno; }
-  .main .seccion-seis {
+  .main__seccion-6 {
     grid-area: seccion-seis; }
-  .main .seccion-dos {
+  .main__seccion-2 {
     grid-area: seccion-dos; }
-  .main .seccion-tres {
+  .main__seccion-3 {
     grid-area: seccion-tres; }
-  .main .seccion-cuatro {
+  .main__seccion-4 {
     grid-area: seccion-cuatro; }
-  .main .seccion-cinco {
+  .main__seccion-5 {
     grid-area: seccion-cinco; }
 
 /* Mobile First */
@@ -105,7 +105,7 @@
 
 /* Mobile Last */
 @media (max-width: 991px) {
-  .grid-index {
+  .main__grid {
     display: flex;
     flex-wrap: wrap; } }
 
@@ -152,15 +152,18 @@
   color: white;
   min-height: 10vh;
   padding: 10px; }
-  .footer .redes {
+  .footer__redes {
     display: flex;
-    align-items: center; }
-    .footer .redes img {
-      display: flex;
-      width: 40px;
-      margin: 10px;
-      border-radius: 50%; }
-  .footer img {
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 5px; }
+    .footer__redes i {
+      border: 2px white solid;
+      color: white;
+      padding: 5px;
+      border-radius: 30%; }
+  .footer__logo {
     width: 100px;
     display: flex;
     margin: auto;

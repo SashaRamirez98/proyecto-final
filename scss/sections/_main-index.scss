@@ -4,13 +4,13 @@
         margin: auto;
         padding: 15px;
     }
-    .titulo-index {
+    &__titulo-index {
         color: black;
         text-align: center;
         font-family: $titulo;
         margin: 2%;
     }
-    .section-index {
+    &__section {
         display: flex;
         justify-content: center;
         img {
@@ -20,7 +20,7 @@
         }
     }
     /* grid index */
-    .grid-index {
+    &__grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -31,22 +31,22 @@
             "seccion-tres seccion-tres seccion-cuatro seccion-cuatro"
             "seccion-cinco seccion-cinco seccion-seis seccion-seis";
     }
-    .seccion-uno {
+    &__seccion-1 {
         grid-area: seccion-uno;
     }
-    .seccion-seis {
+    &__seccion-6 {
         grid-area: seccion-seis;
     }
-    .seccion-dos {
+    &__seccion-2 {
         grid-area: seccion-dos;
     }
-    .seccion-tres {
+    &__seccion-3 {
         grid-area: seccion-tres;
     }
-    .seccion-cuatro {
+    &__seccion-4 {
         grid-area: seccion-cuatro;
     }
-    .seccion-cinco {
+    &__seccion-5 {
         grid-area: seccion-cinco;
     }
 }
@@ -66,7 +66,7 @@
 
 @media (max-width: 991px) {
 
-    .grid-index {
+    .main__grid {
         display: flex;
         flex-wrap: wrap;
     }
