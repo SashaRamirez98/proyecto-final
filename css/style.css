@@ -104,6 +104,13 @@
     grid-area: seccion-cuatro; }
   .main__seccion-5 {
     grid-area: seccion-cinco; }
+  .main .boton-arriba {
+    display: flex;
+    margin: 2px;
+    font-family: "Raleway-Medium";
+    justify-content: center; }
+    .main .boton-arriba .boton-arriba a {
+      margin: 20px !important; }
 
 /* Mobile Last */
 @media (max-width: 991px) {
@@ -134,24 +141,113 @@
     margin: auto; } }
 
 /* seccion Todos los Productos */
-.main .article {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.main__grid-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  justify-items: center;
+  text-align: center;
+  grid-template-areas: "producto-1 producto-2 producto-3" "producto-4 producto-5 producto-6" "producto-7 producto-8 producto-9"; }
+
+.main__producto-1 {
+  grid-area: producto-1; }
+
+.main__producto-2 {
+  grid-area: producto-2; }
+
+.main__producto-3 {
+  grid-area: producto-3; }
+
+.main__producto-4 {
+  grid-area: producto-4; }
+
+.main__producto-5 {
+  grid-area: producto-5; }
+
+.main__producto-6 {
+  grid-area: producto-6; }
+
+.main__producto-7 {
+  grid-area: producto-7; }
+
+.main__producto-8 {
+  grid-area: producto-8; }
+
+.main__producto-9 {
+  grid-area: producto-9; }
+
+.main .accordion-item {
+  background-color: #12370e7c; }
+  .main .accordion-item h2 {
+    text-decoration: none; }
+  .main .accordion-item a {
+    margin: 10px;
+    background-color: #12370e7c; }
+
+.main .card-title {
+  font-family: "Oswald", sans-serif;
   text-align: center; }
 
-.main .card {
-  display: flex; }
+/* Mobile Last */
+@media (max-width: 920px) {
+  .main__grid-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "producto-1 producto-2" "producto-3 producto-4" "producto-5 producto-6" "producto-7 producto-8" "producto-9 ."; }
+  .producto-1 {
+    grid-area: producto-1; }
+  .producto-2 {
+    grid-area: producto-2; }
+  .producto-3 {
+    grid-area: producto-3; }
+  .producto-4 {
+    grid-area: producto-4; }
+  .producto-5 {
+    grid-area: producto-5; }
+  .producto-6 {
+    grid-area: producto-6; }
+  .producto-7 {
+    grid-area: producto-7; }
+  .producto-8 {
+    grid-area: producto-8; }
+  .producto-9 {
+    grid-area: producto-9; } }
 
-.main .boton-arriba {
-  display: flex;
-  margin: 2px;
-  font-family: "Raleway-Medium";
-  justify-content: center; }
-
-.main .boton-arriba a {
-  margin: 20px !important; }
+@media (max-width: 620px) {
+  .main__grid-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5"  "producto-6" "producto-7" "producto-8" "producto-9"; }
+  .producto-1 {
+    grid-area: producto-1; }
+  .producto-2 {
+    grid-area: producto-2; }
+  .producto-3 {
+    grid-area: producto-3; }
+  .producto-4 {
+    grid-area: producto-4; }
+  .producto-5 {
+    grid-area: producto-5; }
+  .producto-6 {
+    grid-area: producto-6; }
+  .producto-7 {
+    grid-area: producto-7; }
+  .producto-8 {
+    grid-area: producto-8; }
+  .producto-9 {
+    grid-area: producto-9; } }
 
 .footer {
   display: flex;

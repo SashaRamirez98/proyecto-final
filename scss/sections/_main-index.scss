@@ -49,6 +49,18 @@
     &__seccion-5 {
         grid-area: seccion-cinco;
     }
+
+    .boton-arriba {
+        display: flex;
+        margin: 2px;
+        font-family: "Raleway-Medium";
+        justify-content: center;
+        .boton-arriba{
+            a{
+                margin: 20px !important;
+            }
+        }
+    }
 }
 
 
