@@ -144,12 +144,12 @@
 .main__grid-productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 20px;
   grid-auto-flow: row;
   justify-items: center;
   text-align: center;
-  grid-template-areas: "producto-1 producto-2 producto-3" "producto-4 producto-5 producto-6" "producto-7 producto-8 producto-9"; }
+  grid-template-areas: "producto-1 producto-2 producto-3" "producto-4 producto-5 producto-6" "producto-7 producto-8 producto-9" "producto-10 . . ."; }
 
 .main__producto-1 {
   grid-area: producto-1; }
@@ -178,6 +178,9 @@
 .main__producto-9 {
   grid-area: producto-9; }
 
+.main__producto-10 {
+  grid-area: producto-10; }
+
 .main .accordion-item {
   background-color: #12370e7c; }
   .main .accordion-item h2 {
@@ -200,7 +203,7 @@
     grid-auto-flow: row;
     justify-items: center;
     text-align: center;
-    grid-template-areas: "producto-1 producto-2" "producto-3 producto-4" "producto-5 producto-6" "producto-7 producto-8" "producto-9 ."; }
+    grid-template-areas: "producto-1 producto-2" "producto-3 producto-4" "producto-5 producto-6" "producto-7 producto-8" "producto-9 producto-10"; }
   .producto-1 {
     grid-area: producto-1; }
   .producto-2 {
@@ -218,18 +221,20 @@
   .producto-8 {
     grid-area: producto-8; }
   .producto-9 {
-    grid-area: producto-9; } }
+    grid-area: producto-9; }
+  .producto-10 {
+    grid-area: producto-10; } }
 
 @media (max-width: 620px) {
   .main__grid-productos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     gap: 20px;
     grid-auto-flow: row;
     justify-items: center;
     text-align: center;
-    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5"  "producto-6" "producto-7" "producto-8" "producto-9"; }
+    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5"  "producto-6" "producto-7" "producto-8" "producto-9" "producto-10"; }
   .producto-1 {
     grid-area: producto-1; }
   .producto-2 {
@@ -247,7 +252,9 @@
   .producto-8 {
     grid-area: producto-8; }
   .producto-9 {
-    grid-area: producto-9; } }
+    grid-area: producto-9; }
+  .producto-10 {
+    grid-area: producto-10; } }
 
 .footer {
   display: flex;
