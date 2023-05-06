@@ -73,6 +73,11 @@
         font-family: $titulo;
         text-align: center;
     }
+
+    .accordion-button:not(.collapsed) {
+        color: #12370ed8;
+        background-color: #ffffff;
+    }
 }
 
 
@@ -130,6 +135,7 @@
     .producto-9 {
         grid-area: producto-9;
     }
+
     .producto-10 {
         grid-area: producto-10;
     }
@@ -149,7 +155,7 @@
             "producto-2"
             "producto-3"
             "producto-4"
-            "producto-5" 
+            "producto-5"
             "producto-6"
             "producto-7"
             "producto-8"

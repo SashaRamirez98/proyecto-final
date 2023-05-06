@@ -193,6 +193,10 @@
   font-family: "Oswald", sans-serif;
   text-align: center; }
 
+.main .accordion-button:not(.collapsed) {
+  color: #12370ed8;
+  background-color: #ffffff; }
+
 /* Mobile Last */
 @media (max-width: 920px) {
   .main__grid-productos {
@@ -234,7 +238,7 @@
     grid-auto-flow: row;
     justify-items: center;
     text-align: center;
-    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5"  "producto-6" "producto-7" "producto-8" "producto-9" "producto-10"; }
+    grid-template-areas: "producto-1" "producto-2" "producto-3" "producto-4" "producto-5" "producto-6" "producto-7" "producto-8" "producto-9" "producto-10"; }
   .producto-1 {
     grid-area: producto-1; }
   .producto-2 {
@@ -255,6 +259,60 @@
     grid-area: producto-9; }
   .producto-10 {
     grid-area: producto-10; } }
+
+.main__grid-baterias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  justify-items: center;
+  text-align: center;
+  grid-template-areas: "producto-4 producto-7 producto-9"; }
+
+.main__producto-4 {
+  grid-area: producto-4; }
+
+.main__producto-7 {
+  grid-area: producto-7; }
+
+.main__producto-9 {
+  grid-area: producto-9; }
+
+/* Mobile Last */
+@media (max-width: 920px) {
+  .main__grid-baterias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "producto-4 producto-7" "producto-9 ."; }
+  __producto-4 {
+    grid-area: producto-4; }
+  __producto-7 {
+    grid-area: producto-7; }
+  __producto-9 {
+    grid-area: producto-9; } }
+
+@media (max-width: 620px) {
+  .main__grid-baterias {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "producto-4" "producto-7" "producto-9"; }
+  __producto-4 {
+    grid-area: producto-4; }
+  __producto-7 {
+    grid-area: producto-7; }
+  __producto-9 {
+    grid-area: producto-9; } }
 
 .footer {
   display: flex;
