@@ -314,6 +314,195 @@
   __producto-9 {
     grid-area: producto-9; } }
 
+.main__grid-bombas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  justify-items: center;
+  text-align: center;
+  grid-template-areas: "producto-1"; }
+
+.main__producto-1 {
+  grid-area: producto-1; }
+
+.main__grid-paneles {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  justify-items: center;
+  text-align: center;
+  grid-template-areas: "producto-3"; }
+
+.main__producto-3 {
+  grid-area: producto-3; }
+
+.main__grid-inversores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  justify-items: center;
+  text-align: center;
+  grid-template-areas: "producto-2 producto-5 producto-8"; }
+
+.main__producto-2 {
+  grid-area: producto-2; }
+
+.main__producto-5 {
+  grid-area: producto-5; }
+
+.main__producto-8 {
+  grid-area: producto-8; }
+
+/* Mobile Last */
+@media (max-width: 920px) {
+  .main__grid-inversores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "producto-2 producto-5" "producto-8 ."; }
+  __producto-2 {
+    grid-area: producto-2; }
+  __producto-5 {
+    grid-area: producto-5; }
+  __producto-8 {
+    grid-area: producto-8; } }
+
+@media (max-width: 620px) {
+  .main__grid-inversores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "producto-2" "producto-5" "producto-8"; }
+  __producto-2 {
+    grid-area: producto-2; }
+  __producto-5 {
+    grid-area: producto-5; }
+  __producto-8 {
+    grid-area: producto-8; } }
+
+.main__trabajos {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.main__grid-trabajos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+  grid-template-areas: "trabajo-1 trabajo-2 trabajo-3 trabajo-4" "trabajo-5 trabajo-6 trabajo-7 ."; }
+
+.main__trabajo-1 {
+  grid-area: trabajo-1; }
+
+.main__trabajo-2 {
+  grid-area: trabajo-2; }
+
+.main__trabajo-3 {
+  grid-area: trabajo-3; }
+
+.main__trabajo-4 {
+  grid-area: trabajo-4; }
+
+.main__trabajo-5 {
+  grid-area: trabajo-5; }
+
+.main__trabajo-6 {
+  grid-area: trabajo-6; }
+
+.main__trabajo-7 {
+  grid-area: trabajo-7; }
+
+/* Mobile Last */
+@media (max-width: 1229px) {
+  .main__grid-trabajos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "trabajo-1 trabajo-2 trabajo-3" "trabajo-4 trabajo-5 trabajo-6" "trabajo-7 . ."; }
+  __trabajo-1 {
+    grid-area: trabajo-1; }
+  __trabajo-2 {
+    grid-area: trabajo-2; }
+  __trabajo-3 {
+    grid-area: trabajo-3; }
+  __trabajo-4 {
+    grid-area: trabajo-4; }
+  __trabajo-5 {
+    grid-area: trabajo-5; }
+  __trabajo-6 {
+    grid-area: trabajo-6; }
+  __trabajo-7 {
+    grid-area: trabajo-7; } }
+
+@media (max-width: 920px) {
+  .main__grid-trabajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "trabajo-1 trabajo-2" "trabajo-3 trabajo-4" "trabajo-5 trabajo-6" "trabajo-7 ."; }
+  __trabajo-1 {
+    grid-area: trabajo-1; }
+  __trabajo-2 {
+    grid-area: trabajo-2; }
+  __trabajo-3 {
+    grid-area: trabajo-3; }
+  __trabajo-4 {
+    grid-area: trabajo-4; }
+  __trabajo-5 {
+    grid-area: trabajo-5; }
+  __trabajo-6 {
+    grid-area: trabajo-6; }
+  __trabajo-7 {
+    grid-area: trabajo-7; } }
+
+@media (max-width: 620px) {
+  .main__grid-trabajos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas: "trabajo-1" "trabajo-2" "trabajo-3" "trabajo-4" "trabajo-5" "trabajo-6" "trabajo-7"; }
+  __trabajo-1 {
+    grid-area: trabajo-1; }
+  __trabajo-2 {
+    grid-area: trabajo-2; }
+  __trabajo-3 {
+    grid-area: trabajo-3; }
+  __trabajo-4 {
+    grid-area: trabajo-4; }
+  __trabajo-5 {
+    grid-area: trabajo-5; }
+  __trabajo-6 {
+    grid-area: trabajo-6; }
+  __trabajo-7 {
+    grid-area: trabajo-7; } }
+
 .footer {
   display: flex;
   justify-content: center;
